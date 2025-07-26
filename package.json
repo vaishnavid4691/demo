@@ -1,0 +1,19 @@
+{
+  "name": "bazaarsetu",
+  "version": "1.0.0",
+  "description": "Real-time web app for street food vendors to find raw materials with health-safety checks and AI assistance",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run client\" \"npm run server\"",
+    "client": "cd client && npm start",
+    "server": "cd server && npm run dev",
+    "build": "cd client && npm run build",
+    "install-all": "npm install && cd client && npm install && cd ../server && npm install"
+  },
+  "keywords": ["food", "vendor", "supplier", "marketplace", "health-safety"],
+  "author": "BazaarSetu Team",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^7.6.0"
+  }
+}
